@@ -5,12 +5,6 @@
   <title>EA VD File Upload</title>
 </head>
   <body>
-
-    <?php /* <form action="uploadVD.php" method="post" enctype="multipart/form-data">
-      <input type="file" name="fileupload" value="fileupload" id="fileupload">
-      <label for="fileupload"> Select a file to upload</label>
-      <input type="submit" value="submit">
-    </form> */ ?>
     <div class="form-container">
       <div class="form_description">
           <h2>Upload VD Classified Export</h2>
@@ -25,10 +19,10 @@
           </p>
       </form>
     <div>
+    <hr>
       <div class="form-container">
         <div class="form_description">
-            <h2>Run the import</h2>
-            <p>some description here</p>
+            <h2>Run the Import</h2>
         </div>
         <form action="get.php" method="get"  >
             <p>
@@ -37,9 +31,10 @@
         </form>
       <div>
    <hr>
+   <h2>Exporting</h2>
    <div class="form-container">
      <div class="form_description">
-         <h2>Rentals</h2>
+         <h3>Rentals</h3>
      </div>
      <form action="export-rentals.php" method="get"  >
          <p>
@@ -50,7 +45,7 @@
 
    <div class="form-container">
      <div class="form_description">
-         <h2>Real Estate</h2>
+         <h3>Real Estate</h3>
      </div>
      <form action="export-realestate.php" method="get"  >
          <p>
@@ -61,12 +56,24 @@
 
    <div class="form-container">
      <div class="form_description">
-         <h2>Classifieds</h2>
+         <h3>Classifieds</h3>
      </div>
      <form action="export-classifieds.php" method="get"  >
          <p>
            <input class="button" type="submit" value="export Classifieds" name="submit">
          </p>
      </form>
+
+     <div class="form-container">
+       <div class="form_description">
+           <h3>Jobs / Help wanted</h3>
+           <p>Not until after have added Job Titles!
+       </div>
+       <form action="export-jobs.php" method="get"  >
+           <p>
+             <input class="button" type="submit" value="export Jobs" name="submit">
+           </p>
+       </form>
+
   </body>
 </html>
